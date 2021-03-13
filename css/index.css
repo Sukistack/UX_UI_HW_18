@@ -1,13 +1,18 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
 
 .Navigation{
 background-color:#373738;
+padding: 1%;
 }
 
-nav ul{
+.navUl{
   display: inline-block;
+  vertical-align: top;
 }
 
-nav ul li{
+.Navigation ul li{
   display: inline-block;
   color: aliceblue;
   width: 50px;
@@ -16,17 +21,6 @@ nav ul li{
 .inline-block{
    display: inline-block; 
    vertical-align: top;
-}
-
-.logo{
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-    }
-
-.nav{
-width: 73%;
-padding: 1%;
 }
 
 ul{
@@ -58,3 +52,60 @@ width: 50px;
 display: inline-block;
 vertical-align: top;
 }
+
+
+.flexContainer{
+display:flex;
+}
+
+.flexContainer div{
+width: 33%;
+margin: 30px;
+padding 15px;
+}
+
+.workGrid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: 
+"abc abcInfo"
+"beyondBlue beyondBlueinfo"
+"reeli reeliInfo";
+text-align: center;
+}
+
+.abc{
+grid-area: abc;
+}
+
+.abcInfo{
+  grid-area: abcInfo;
+}
+
+.beyondBlue{
+  grid-area: beyondBlue;
+}
+
+.beyondBlueinfo{
+  grid-area: beyondBlueinfo;
+}
+
+.reeli{
+  grid-area: reeli;
+}
+
+.reeliInfo{
+  grid-area: reeliInfo;
+}
+
+
+
+
+
+
+
+  
+
+
+
